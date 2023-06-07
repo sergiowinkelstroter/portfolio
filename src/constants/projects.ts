@@ -1,15 +1,23 @@
-import { ProjectItem } from "./ProjectItem";
 import GaleriaImage from "/public/assets/galeria.png";
 import PearsonHardmanImage from "/public/assets/pearsonHardam.png";
 import CoffeeDeliveryImage from "/public/assets/CapaCoffeeDelivery.png";
 import GitHubBlogImage from "/public/assets/GitHubCapa.png";
 import TaskListImage from "/public/assets/tasklistcapa.png";
 import IgniteTimerImage from "/public/assets/Ignite-timer.png";
-import Link from "next/link";
-import { AiOutlineArrowRight } from "react-icons/ai";
+import IgniteShopImage from "/public/assets/Ignite-Shop.png";
+import IgniteCallImage from "/public/assets/ignite-call.png";
+
 import { v4 as uuid } from "uuid";
 
-const data = [
+export const projectsData = [
+  {
+    id: uuid(),
+    title: "Ignite Call",
+    image: IgniteCallImage,
+    technologies: ["NextJS", "TypeScript"],
+    repo: "https://github.com/sergiowinkelstroter/ignite-call",
+    demo: "https://ignite-call-wink.vercel.app/",
+  },
   {
     id: uuid(),
     title: "Coffee Delivery",
@@ -26,7 +34,14 @@ const data = [
     repo: "https://github.com/sergiowinkelstroter/ToDo-List",
     demo: "https://todo-list-ignitee.vercel.app/",
   },
-
+  {
+    id: uuid(),
+    title: "Ignite Shop",
+    image: IgniteShopImage,
+    technologies: ["NextJS", "CSS", "TypeScript"],
+    repo: "https://github.com/sergiowinkelstroter/ignite-shop",
+    demo: "https://ignite-shop-sw.vercel.app/",
+  },
   {
     id: uuid(),
     title: "GitHub Blog",
@@ -61,34 +76,3 @@ const data = [
     demo: "https://gallery-tan-nu.vercel.app/",
   },
 ];
-
-export const SectionProjects = () => {
-  return (
-    <div
-      id="projetos"
-      className="w-full flex mt-32 flex-col justify-center  text-center"
-    >
-      <div className="max-w-[1240px] flex flex-col m-auto px-2 py-16 w-full ">
-        <h1 className="">Projetos</h1>
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-2 mb-6 justify-center items-center">
-          {data.map((project) => (
-            <ProjectItem
-              key={project.id}
-              title={project.title}
-              image={project.image}
-              technologies={project.technologies}
-              demo={project.demo}
-              repo={project.repo}
-            />
-          ))}
-        </div>
-        <div className="flex items-center gap-2 m-auto hover:text-blue-600 transition-colors">
-          <Link href={"https://github.com/sergiowinkelstroter"} target="_blank">
-            Ver mais projetos
-          </Link>
-          <AiOutlineArrowRight />
-        </div>
-      </div>
-    </div>
-  );
-};

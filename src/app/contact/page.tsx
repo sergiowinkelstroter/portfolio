@@ -4,11 +4,11 @@ import { BsTelephone } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
 import { GoLocation } from "react-icons/go";
 
-export const Contact = () => {
+export default function Contact() {
   return (
     <div
       id="contato"
-      className="w-full flex flex-col justify-center  text-center"
+      className="w-full flex flex-col justify-center  text-center mt-10"
     >
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full ">
         <h1>Contato</h1>
@@ -42,4 +42,4 @@ export const Contact = () => {
       </div>
     </div>
   );
-};
+}

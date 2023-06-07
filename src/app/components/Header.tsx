@@ -18,32 +18,29 @@ export const Header = () => {
   };
 
   return (
-    <div className="fixed w-full h-20 z-[100] bg-[#1f2937] text-white border-b-2 border-b-blue-600">
+    <div className="fixed w-full h-20 z-[100] bg-[#1f2937] text-white border-b-2 border-b-blue-600 top-0 right-0 left-0">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 md:items-center md:px-4">
         <>
-          <Link
-            href="/#home"
-            className="uppercase text-2xl md:text-3xl font-bold "
-          >
+          <Link href="/" className="uppercase text-2xl md:text-3xl font-bold ">
             <p>Sergio</p>
           </Link>
           <ul className="hidden md:flex md:items-center">
-            <Link href="/#home">
+            <Link href="/">
               <li className="ml-10 text-sm uppercase hover:text-blue-600">
                 Home
               </li>
             </Link>
-            <Link href="/#about">
+            <Link href="/about">
               <li className="ml-10 text-sm uppercase hover:text-blue-600">
                 Sobre
               </li>
             </Link>
-            <Link href="/#skills">
+            <Link href="/skills">
               <li className="ml-10 text-sm uppercase hover:text-blue-600">
                 Skills
               </li>
             </Link>
-            <Link href="/#projetos">
+            <Link href="/projects">
               <li className="ml-10 text-sm uppercase hover:text-blue-600">
                 Projetos
               </li>
@@ -52,7 +49,7 @@ export const Header = () => {
         </>
 
         <Link
-          href="/#contato"
+          href="/contact"
           className="hidden md:block bg-blue-600 p-2 w-44 text-center font-semibold rounded-3xl border border-transparent  hover:bg-[#1f2937] hover:transition-colors hover:border-blue-600"
         >
           Entrar em contato
@@ -76,7 +73,7 @@ export const Header = () => {
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <Link href="/#home" className="uppercase text-xl font-bold ">
+              <Link href="/" className="uppercase text-xl font-bold ">
                 <p>Sergio</p>
               </Link>
               <button
@@ -89,28 +86,31 @@ export const Header = () => {
           </div>
           <div className="py-4 flex flex-col mt-6">
             <ul className="uppercase flex flex-col gap-4">
-              <Link href="/#home">
+              <Link href="/">
                 <li onClick={() => setNav(false)} className=" text-sm">
                   Home
                 </li>
               </Link>
-              <Link href="/#about">
+              <Link href="/about">
                 <li onClick={() => setNav(false)} className=" text-sm">
                   Sobre
                 </li>
               </Link>
-              <Link href="/#skills">
+              <Link href="/skills">
                 <li onClick={() => setNav(false)} className=" text-sm">
                   Skills
                 </li>
               </Link>
-              <Link href="/#projetos">
+              <Link
+                href="/projectos
+              "
+              >
                 <li onClick={() => setNav(false)} className=" text-sm">
                   Projetos
                 </li>
               </Link>
               <Link
-                href="/#contato"
+                href="/contact"
                 onClick={() => setNav(false)}
                 className="bg-blue-600 p-2 w-40 text-sm font-semibold rounded-md text-[#ecf0f3] hover:bg-[#1f2937] hover:transition-colors"
               >
