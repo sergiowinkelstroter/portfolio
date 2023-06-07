@@ -102,7 +102,7 @@ export const Header = () => {
                 </li>
               </Link>
               <Link
-                href="/projectos
+                href="/projects
               "
               >
                 <li onClick={() => setNav(false)} className=" text-sm">
