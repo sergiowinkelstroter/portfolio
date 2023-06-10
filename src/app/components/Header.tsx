@@ -19,17 +19,12 @@ export const Header = () => {
 
   return (
     <div className="fixed w-full h-20 z-[100] bg-[#1f2937] text-white border-b-2 border-b-blue-600 top-0 right-0 left-0">
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 md:items-center md:px-4">
+      <div className="flex justify-between items-center w-full h-full px-4 2xl:px-16 md:items-center md:px-4">
         <>
           <Link href="/" className="uppercase text-2xl md:text-3xl font-bold ">
             <p>Sergio</p>
           </Link>
           <ul className="hidden md:flex md:items-center">
-            <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:text-blue-600">
-                Home
-              </li>
-            </Link>
             <Link href="/about">
               <li className="ml-10 text-sm uppercase hover:text-blue-600">
                 Sobre
@@ -67,7 +62,7 @@ export const Header = () => {
         <div
           className={
             nav
-              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#1f2937] p-10 ease-in duration-500 flex flex-col justify-between"
+              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#1f2937] p-10 ease-in duration-500 flex flex-col"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
@@ -86,11 +81,6 @@ export const Header = () => {
           </div>
           <div className="py-4 flex flex-col mt-6">
             <ul className="uppercase flex flex-col gap-4">
-              <Link href="/">
-                <li onClick={() => setNav(false)} className=" text-sm">
-                  Home
-                </li>
-              </Link>
               <Link href="/about">
                 <li onClick={() => setNav(false)} className=" text-sm">
                   Sobre
@@ -136,15 +126,6 @@ export const Header = () => {
                   rel="noreferrer"
                 >
                   <AiFillLinkedin size={28} />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/winkelstrotersergio/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <AiFillInstagram size={28} />
                 </a>
               </li>
             </ul>

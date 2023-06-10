@@ -33,15 +33,6 @@ export const Main = () => {
                 <AiFillLinkedin size={32} />
               </a>
             </li>
-            <li className="hover:text-blue-600">
-              <a
-                href="https://www.instagram.com/winkelstrotersergio/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <AiFillInstagram size={32} />
-              </a>
-            </li>
           </ul>
         </div>
       </div>
