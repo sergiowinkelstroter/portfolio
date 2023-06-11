@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import perfilImg from "/public/assets/home_img.png";
+import { motion } from "framer-motion";
 
 export default function About() {
   return (
@@ -21,7 +23,16 @@ export default function About() {
               className="rounded-md "
             />
           </div>
-          <div className="mt-10 px-4 flex flex-col gap-6 items-center">
+          <motion.div
+            initial={{ scale: 0 }}
+            animate={{ rotate: 360, scale: 1 }}
+            transition={{
+              type: "spring",
+              stiffness: 260,
+              damping: 40,
+            }}
+            className="mt-10 px-4 flex flex-col gap-6 items-center container"
+          >
             <p className="text-start text-sm md:text-base">
               Olá! Sou Sergio Winkelstroter, dei meus primeiros passos nessa
               área quando ingressei na faculdade de Sistemas para Internet.
@@ -41,7 +52,7 @@ export default function About() {
             >
               Baixar curriculo
             </a>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

@@ -1,3 +1,5 @@
+"use client";
+
 import Image, { StaticImageData } from "next/image";
 
 interface ProjectItemProps {
@@ -21,8 +23,10 @@ export const ProjectItem = ({
     "
     >
       <Image src={image} alt="" width={300} height={300} />
-      <span className="mt-1">{technologies.join("/")}</span>
-      <div className="flex justify-between mt-4 w-full items-center  md:flex-row px-4 translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+      <span className="mt-1 translate-y-0 transform opacity-100 transition-all group-hover:translate-y-8 group-hover:opacity-0">
+        {technologies.join(", ")}
+      </span>
+      <div className="flex justify-between mt-4 w-[320px] items-center  md:flex-row px-4 translate-y-10 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
         <a
           target="_blank"
           href={demo}
