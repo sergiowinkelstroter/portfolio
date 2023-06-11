@@ -27,12 +27,12 @@ export const Header = () => {
           <ul className="hidden md:flex md:items-center">
             <Link href="/about">
               <li className="ml-10 text-sm uppercase hover:text-blue-600">
-                Sobre
+                Sobre mim
               </li>
             </Link>
             <Link href="/skills">
               <li className="ml-10 text-sm uppercase hover:text-blue-600">
-                Skills
+                Habilidades
               </li>
             </Link>
             <Link href="/projects">
@@ -83,12 +83,12 @@ export const Header = () => {
             <ul className="uppercase flex flex-col gap-4">
               <Link href="/about">
                 <li onClick={() => setNav(false)} className=" text-sm">
-                  Sobre
+                  Sobre mim
                 </li>
               </Link>
               <Link href="/skills">
                 <li onClick={() => setNav(false)} className=" text-sm">
-                  Skills
+                  Habilidades
                 </li>
               </Link>
               <Link

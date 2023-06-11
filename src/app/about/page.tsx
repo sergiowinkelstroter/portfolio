@@ -23,17 +23,16 @@ export default function About() {
           </div>
           <div className="mt-10 px-4 flex flex-col gap-6 items-center">
             <p className="text-start text-sm md:text-base">
-              Olá! Sou Sergio Winkelstroter, há quase um ano, dei meus primeiros
-              passos nessa área empolgante quando ingressei na faculdade de
-              Sistemas para Internet. Durante minha trajetória, não me limitei
-              apenas à sala de aula. Fiz diversos cursos online, participei de
-              eventos virtuais e me envolvi em projetos web empolgantes. Essas
-              experiências me proporcionaram a oportunidade de aplicar meus
-              conhecimentos em situações reais, fortalecendo minha base de
-              habilidades em desenvolvimento web. Busco minha primeira
-              experiência profissional para colocar em prática tudo o que
-              aprendi, bem como adquirir novas habilidades até valiosos
-              conhecimentos.
+              Olá! Sou Sergio Winkelstroter, dei meus primeiros passos nessa
+              área quando ingressei na faculdade de Sistemas para Internet.
+              Durante minha trajetória, não me limitei apenas à sala de aula.
+              Fiz diversos cursos online, participei de eventos virtuais e me
+              envolvi em projetos. Essas experiências me proporcionaram a
+              oportunidade de aplicar meus conhecimentos em situações reais,
+              fortalecendo minha base de habilidades em desenvolvimento web.
+              Busco minha primeira experiência profissional para colocar em
+              prática tudo o que aprendi, bem como adquirir novas habilidades
+              até valiosos conhecimentos.
             </p>
             <a
               download

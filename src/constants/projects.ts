@@ -6,6 +6,7 @@ import TaskListImage from "/public/assets/tasklistcapa.png";
 import IgniteTimerImage from "/public/assets/Ignite-timer.png";
 import IgniteShopImage from "/public/assets/Ignite-Shop.png";
 import IgniteCallImage from "/public/assets/ignite-call.png";
+import IgniteFeedImage from "/public/assets/ignite-feed.png";
 
 import { v4 as uuid } from "uuid";
 
@@ -14,7 +15,7 @@ export const projectsData = [
     id: uuid(),
     title: "Ignite Call",
     image: IgniteCallImage,
-    technologies: ["NextJS", "TypeScript"],
+    technologies: ["NextJS", "TypeScript", "Prisma"],
     repo: "https://github.com/sergiowinkelstroter/ignite-call",
     demo: "https://ignite-call-wink.vercel.app/",
   },
@@ -22,7 +23,7 @@ export const projectsData = [
     id: uuid(),
     title: "Coffee Delivery",
     image: CoffeeDeliveryImage,
-    technologies: ["ReactJS", "Styled-Components", "TypeScript"],
+    technologies: ["ReactJS", "TypeScript", "Styled-Components"],
     repo: "https://github.com/sergiowinkelstroter/coffee-delivery",
     demo: "https://coffee-delivery-rho-ten.vercel.app/",
   },
@@ -38,7 +39,7 @@ export const projectsData = [
     id: uuid(),
     title: "Ignite Shop",
     image: IgniteShopImage,
-    technologies: ["NextJS", "CSS", "TypeScript"],
+    technologies: ["NextJS", "TypeScript", "Stitches-React"],
     repo: "https://github.com/sergiowinkelstroter/ignite-shop",
     demo: "https://ignite-shop-sw.vercel.app/",
   },
@@ -46,7 +47,7 @@ export const projectsData = [
     id: uuid(),
     title: "GitHub Blog",
     image: GitHubBlogImage,
-    technologies: ["ReactJS", "TailwindCSS", "TypeScript"],
+    technologies: ["ReactJS", "TypeScript", "TailwindCSS"],
     repo: "https://github.com/sergiowinkelstroter/github-blog",
     demo: "https://github-blog-roan.vercel.app/",
   },
@@ -61,9 +62,18 @@ export const projectsData = [
   },
   {
     id: uuid(),
+    title: "Ignite Feed",
+    image: IgniteFeedImage,
+    technologies: ["ReactJS", "TypeScript", "CSS"],
+    repo: "https://github.com/sergiowinkelstroter/ignitee-feed",
+
+    demo: "https://ignitee-feed.vercel.app/",
+  },
+  {
+    id: uuid(),
     title: "Pearson Hardman",
     image: PearsonHardmanImage,
-    technologies: ["HTML", "CSS", "JavaScript"],
+    technologies: ["HTML", "JavaScript", "CSS"],
     repo: "https://github.com/sergiowinkelstroter/FrontWeek-PearsonHardman",
     demo: "https://pearson-hardman-winkelstrotersergio.vercel.app/",
   },

@@ -21,8 +21,13 @@ export const ProjectItem = ({
     "
     >
       <Image src={image} alt="" width={300} height={300} />
+      <span className="mt-1">{technologies.join("/")}</span>
       <div className="flex justify-between mt-4 w-full items-center  md:flex-row px-4 translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-        <a target="_blank" href={demo} className="text-base">
+        <a
+          target="_blank"
+          href={demo}
+          className="text-base hover:text-blue-600"
+        >
           {title}
         </a>
         <div className="bg-blue-600 p-2 w-20 text-sm text-center h-10 font-semibold rounded-xl border border-transparent  hover:bg-[#1f2937] hover:transition-colors hover:border-blue-600">

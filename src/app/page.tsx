@@ -1,4 +1,27 @@
-import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from "react-icons/ai";
+"use client";
+
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { motion } from "framer-motion";
+
+const container = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.3,
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const item = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+  },
+};
 
 export default function Home() {
   return (
@@ -14,8 +37,13 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <ul className="flex gap-4">
-            <li className="hover:text-blue-600">
+          <motion.ul
+            className="flex gap-4 container"
+            variants={container}
+            initial="hidden"
+            animate="visible"
+          >
+            <motion.li variants={item} className="hover:text-blue-600">
               <a
                 href="https://github.com/sergiowinkelstroter"
                 target="_blank"
@@ -23,8 +51,8 @@ export default function Home() {
               >
                 <AiFillGithub size={32} />
               </a>
-            </li>
-            <li className="hover:text-blue-600">
+            </motion.li>
+            <motion.li variants={item} className="hover:text-blue-600">
               <a
                 href="https://www.linkedin.com/in/sergio-winkelstroter/"
                 target="_blank"
@@ -32,17 +60,8 @@ export default function Home() {
               >
                 <AiFillLinkedin size={32} />
               </a>
-            </li>
-            <li className="hover:text-blue-600">
-              <a
-                href="https://www.instagram.com/winkelstrotersergio/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <AiFillInstagram size={32} />
-              </a>
-            </li>
-          </ul>
+            </motion.li>
+          </motion.ul>
         </div>
       </div>
     </div>

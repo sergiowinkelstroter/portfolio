@@ -18,8 +18,8 @@ export const skills = [
   { name: "React.js", image: ReactImage },
   { name: "Next.js", image: NextImage },
   { name: "TailwindCSS", image: TailwindImage },
-  { name: "Styled Components", image: StyledComponentsImage },
   { name: "Firebase", image: FirebaseImage },
   { name: "GitHub", image: GithubImage },
-  { name: "Radix UI", image: RadixImage },
+  { name: "Styled Components", image: StyledComponentsImage },
+  // { name: "Radix UI", image: RadixImage },
 ];
