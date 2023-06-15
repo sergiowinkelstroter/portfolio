@@ -7,6 +7,8 @@ import IgniteTimerImage from "/public/assets/Ignite-timer.png";
 import IgniteShopImage from "/public/assets/Ignite-Shop.png";
 import IgniteCallImage from "/public/assets/ignite-call.png";
 import IgniteFeedImage from "/public/assets/ignite-feed.png";
+import SpotifyTailwindcssImage from "/public/assets/spotify-tailwindcss.png";
+import PrevTempoImage from "/public/assets/prev-tempo.png";
 
 import { v4 as uuid } from "uuid";
 
@@ -84,5 +86,21 @@ export const projectsData = [
     technologies: ["ReactJS", "TypeScript", "Firebase", "Styled-Components"],
     repo: "https://github.com/sergiowinkelstroter/gallery",
     demo: "https://gallery-tan-nu.vercel.app/",
+  },
+  {
+    id: uuid(),
+    title: "Spotify Tailwindcss",
+    image: SpotifyTailwindcssImage,
+    technologies: ["NextJS", "TypeScript", "TailwindCSS"],
+    repo: "https://github.com/sergiowinkelstroter/spotify-tailwindcss",
+    demo: "https://spotify-tailwindcss.vercel.app/",
+  },
+  {
+    id: uuid(),
+    title: "Previsão do tempo",
+    image: PrevTempoImage,
+    technologies: ["ReactJS", "TailwindCSS", "Vite"],
+    repo: "https://github.com/sergiowinkelstroter/prev-tempo",
+    demo: "https://prev-tempo-sage.vercel.app/",
   },
 ];
