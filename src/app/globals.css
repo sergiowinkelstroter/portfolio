@@ -4,6 +4,7 @@
 
 body {
   @apply text-[#ecf0f3] bg-[#1f2937];
+  scroll-behavior: smooth;
 }
 
 h1,

@@ -1,11 +1,9 @@
-"use client";
 import Image from "next/image";
 import perfilImg from "/public/assets/home_img.png";
-import { motion } from "framer-motion";
 
-export default function About() {
+export const About = () => {
   return (
-    <div
+    <section
       id="about"
       className="w-full flex justify-center text-center mt-28 mb-6 md:mb-0"
     >
@@ -23,25 +21,19 @@ export default function About() {
               className="rounded-md "
             />
           </div>
-          <motion.div
-            initial={{ scale: 0 }}
-            animate={{ rotate: 360, scale: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 260,
-              damping: 40,
-            }}
-            className="mt-10 px-4 flex flex-col gap-6 items-center container"
-          >
+          <div className="mt-10 px-4 flex flex-col gap-6 items-center container">
             <p className="text-start text-sm md:text-base">
-              Olá! Sou Sergio Winkelstroter, desenvolvedor Front-end. Dei meus
-              primeiros passos nessa área quando ingressei na faculdade de
-              Sistemas para Internet. Durante essa trajetória, não me limitei
-              apenas à sala de aula. Fiz diversos cursos online, participei de
-              eventos virtuais e me envolvi em projetos. Essas experiências me
-              proporcionaram a oportunidade de aplicar meus conhecimentos em
-              situações reais, fortalecendo minha base de habilidades em
-              desenvolvimento web.
+              Desenvolvedor front-end especializado em{" "}
+              <span className="font-bold">React.js</span>. Estudante de Sistemas
+              para Internet. Habilidades em{" "}
+              <span className="font-bold">HTML</span>,{" "}
+              <span className="font-bold">CSS</span>,{" "}
+              <span className="font-bold">JavaScript</span>,
+              <span className="font-bold">TypeScript</span> e{" "}
+              <span className="font-bold">Next.js</span>. Apaixonado por criar
+              interfaces elegantes e interativas. Comprometido em oferecer
+              experiências de usuário excepcionais. Sempre atualizado com as
+              últimas tendências e em busca de desafios estimulantes.
             </p>
             <a
               download
@@ -50,9 +42,9 @@ export default function About() {
             >
               Baixar curriculo
             </a>
-          </motion.div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
-}
+};
