@@ -19,7 +19,7 @@ export const ProjectItem = ({
 }: ProjectItemProps) => {
   return (
     <div
-      className="m-auto my-10 flex flex-col w-[300px]   rounded-xl items-center hover:scale-105 ease-in duration-300 hover:cursor-pointer border-b-2 border-b-blue-600
+      className="m-auto my-10 flex flex-col w-[300px]    rounded-xl items-center hover:scale-105 ease-in duration-300 hover:cursor-pointer border-b-2 border-b-blue-600
     "
     >
       <Image src={image} alt="" width={300} height={300} />

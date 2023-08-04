@@ -9,10 +9,19 @@ import IgniteCallImage from "/public/assets/ignite-call.png";
 import IgniteFeedImage from "/public/assets/ignite-feed.png";
 import SpotifyTailwindcssImage from "/public/assets/spotify-tailwindcss.png";
 import PrevTempoImage from "/public/assets/prev-tempo.png";
+import EmbalaImage from "/public/assets/embala-img.png";
 
 import { v4 as uuid } from "uuid";
 
 export const projectsData = [
+  {
+    id: uuid(),
+    title: "Embala Brasil",
+    image: EmbalaImage,
+    technologies: ["NextJS", "TypeScript", "TailwindCSS"],
+    repo: "https://embalabrasil.online",
+    demo: "https://embalabrasil.online",
+  },
   {
     id: uuid(),
     title: "Ignite Call",
