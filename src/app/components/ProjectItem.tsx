@@ -1,9 +1,11 @@
 "use client";
-
+import * as Dialog from "@radix-ui/react-dialog";
 import Image, { StaticImageData } from "next/image";
+import { ProjectModal } from "./ProjectModal";
 
 interface ProjectItemProps {
   title: string;
+  description: string;
   technologies: string[];
   repo: string;
   image: StaticImageData;
@@ -15,6 +17,7 @@ export const ProjectItem = ({
   technologies,
   repo,
   image,
+  description,
   demo,
 }: ProjectItemProps) => {
   return (
@@ -33,11 +36,19 @@ export const ProjectItem = ({
           >
             {title}
           </a>
-          <div className="bg-blue-600 p-2 w-20 text-sm text-center h-10 font-semibold rounded-xl border border-transparent  hover:bg-[#1f2937] hover:transition-colors hover:border-blue-600">
-            <a target="_blank" rel="noreferrer" href={repo}>
+          <Dialog.Root>
+            <Dialog.Trigger className="bg-blue-600 p-2 w-20 text-sm text-center h-10 font-semibold rounded-xl border border-transparent  hover:bg-[#1f2937] hover:transition-colors hover:border-blue-600">
               Ver mais
-            </a>
-          </div>
+            </Dialog.Trigger>
+            <ProjectModal
+              demo={demo}
+              description={description}
+              image={image}
+              repo={repo}
+              technologies={technologies}
+              title={title}
+            />
+          </Dialog.Root>
         </div>
       </div>
     </div>

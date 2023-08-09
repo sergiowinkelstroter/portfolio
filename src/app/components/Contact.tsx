@@ -11,7 +11,7 @@ export const Contact = () => {
       id="contato"
       className="w-full flex flex-col justify-center  text-center mt-10 "
     >
-      <div className="max-w-[1240px] m-auto px-2 py-16 w-full ">
+      <div className="max-w-[1100px] m-auto px-2 py-16 w-full ">
         <h1>Contato</h1>
 
         <div className="flex flex-col  md:grid md:grid-cols-2 mt-12">
