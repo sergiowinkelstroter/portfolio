@@ -10,6 +10,10 @@ import IgniteFeedImage from "/public/assets/ignite-feed.png";
 import SpotifyTailwindcssImage from "/public/assets/spotify-tailwindcss.png";
 import PrevTempoImage from "/public/assets/prev-tempo.png";
 import EmbalaImage from "/public/assets/embala-img.png";
+import NumberGeneratorImage from "/public/assets/number-generator.png";
+import ClockImage from "/public/assets/clock.png";
+import FinancesImage from "/public/assets/finances.png";
+import PrimeCarImage from "/public/assets/primecar-page.png";
 
 import { v4 as uuid } from "uuid";
 
@@ -24,9 +28,69 @@ export const projectsJS = [
     repo: "https://github.com/sergiowinkelstroter/FrontWeek-PearsonHardman",
     demo: "https://pearson-hardman-winkelstrotersergio.vercel.app/",
   },
+  {
+    id: uuid(),
+    title: "NumberGen",
+    image: NumberGeneratorImage,
+    description:
+      "Bem-vindo ao NumberGen, sua ferramenta confiável para gerar números aleatórios em diversos intervalos e formatos. Seja para sorteios, jogos ou qualquer outra necessidade que envolva números aleatórios, nossa ferramenta está aqui para fornecer resultados imparciais e aleatórios.",
+    technologies: ["HTML", "JavaScript", "CSS"],
+    repo: "https://github.com/sergiowinkelstroter/number-generator",
+    demo: "https://number-generator-phi.vercel.app",
+  },
+  {
+    id: uuid(),
+    title: "Clock",
+    image: ClockImage,
+    description:
+      "Bem-vindo ao Clock, seu relógio digital versátil para acompanhar o tempo com facilidade e estilo.",
+    technologies: ["HTML", "JavaScript", "CSS"],
+    repo: "https://github.com/sergiowinkelstroter/relogio-digital",
+    demo: "https://relogio-digital-henna.vercel.app",
+  },
 ];
 
 export const projectsReact = [
+  {
+    id: uuid(),
+    title: "Galeria de fotos",
+    image: GaleriaImage,
+    description:
+      "Bem-vindo à Galeria de Fotos, o espaço perfeito para compartilhar e explorar momentos preciosos através de uma galeria de fotos. Com a integração do Firebase, nossa aplicação oferece uma maneira fácil e segura de armazenar, gerenciar e compartilhar suas lembranças fotográficas com amigos e familiares.",
+    technologies: ["ReactJS", "TypeScript", "Firebase", "Styled-Components"],
+    repo: "https://github.com/sergiowinkelstroter/gallery",
+    demo: "https://gallery-tan-nu.vercel.app/",
+  },
+  {
+    id: uuid(),
+    title: "ClimaNow",
+    image: PrevTempoImage,
+    description:
+      "Bem-vindo ao ClimaNow, sua fonte confiável para obter informações precisas e atualizadas sobre o clima em qualquer lugar do mundo. Com nossa aplicação, você pode planejar seu dia com antecedência, fazer escolhas informadas e estar preparado para quaisquer condições climáticas.",
+    technologies: ["ReactJS", "TailwindCSS", "Vite"],
+    repo: "https://github.com/sergiowinkelstroter/prev-tempo",
+    demo: "https://prev-tempo-sage.vercel.app/",
+  },
+  {
+    id: uuid(),
+    title: "Finances",
+    image: FinancesImage,
+    description:
+      "Bem-vindo ao Finances, sua solução completa para tomar o controle das suas finanças pessoais de maneira inteligente e organizada. Com nossa aplicação, você pode gerenciar suas despesas, acompanhar seu orçamento e tomar decisões financeiras informadas para alcançar seus objetivos.",
+    technologies: ["ReactJS", "JavaScript", "Styled-Components"],
+    repo: "https://github.com/sergiowinkelstroter/app-financeiro",
+    demo: "https://app-financeiro-gilt.vercel.app",
+  },
+  {
+    id: uuid(),
+    title: "Prime Car",
+    image: PrimeCarImage,
+    description:
+      "Bem-vindo à PrimeCar, seu destino exclusivo para os mais emocionantes carros esportivos do mercado. Combinamos paixão, desempenho e luxo para oferecer uma experiência única ao volante. Explore nossa seleção de máquinas potentes e elegantes que vão acelerar seu coração.",
+    technologies: ["ReactJS", "JavaScript", "TailwindCSS"],
+    repo: "https://github.com/sergiowinkelstroter/primeCar-landingpage",
+    demo: "primecar.vercel.app/",
+  },
   {
     id: uuid(),
     title: "Coffee Delivery",
@@ -77,26 +141,6 @@ export const projectsReact = [
     repo: "https://github.com/sergiowinkelstroter/ignitee-feed",
 
     demo: "https://ignitee-feed.vercel.app/",
-  },
-  {
-    id: uuid(),
-    title: "Galeria de fotos",
-    image: GaleriaImage,
-    description:
-      "Bem-vindo à Galeria de Fotos, o espaço perfeito para compartilhar e explorar momentos preciosos através de uma galeria de fotos. Com a integração do Firebase, nossa aplicação oferece uma maneira fácil e segura de armazenar, gerenciar e compartilhar suas lembranças fotográficas com amigos e familiares.",
-    technologies: ["ReactJS", "TypeScript", "Firebase", "Styled-Components"],
-    repo: "https://github.com/sergiowinkelstroter/gallery",
-    demo: "https://gallery-tan-nu.vercel.app/",
-  },
-  {
-    id: uuid(),
-    title: "ClimaNow",
-    image: PrevTempoImage,
-    description:
-      "Bem-vindo ao ClimaNow, sua fonte confiável para obter informações precisas e atualizadas sobre o clima em qualquer lugar do mundo. Com nossa aplicação, você pode planejar seu dia com antecedência, fazer escolhas informadas e estar preparado para quaisquer condições climáticas.",
-    technologies: ["ReactJS", "TailwindCSS", "Vite"],
-    repo: "https://github.com/sergiowinkelstroter/prev-tempo",
-    demo: "https://prev-tempo-sage.vercel.app/",
   },
 ];
 
@@ -152,7 +196,7 @@ export const projectsVue = [
       "Bem-vindo ao TaDo List, a ferramenta definitiva para organizar sua vida e aumentar sua produtividade. Com nosso aplicativo de lista de tarefas intuitivo, você pode gerenciar suas atividades diárias, definir metas e acompanhar seu progresso, tudo em um só lugar.",
 
     technologies: ["VueJS", "CSS"],
-    repo: "https://github.com/sergiowinkelstroter/redux-player",
-    demo: "https://todo-list-ignitee.vercel.app/",
+    repo: "https://github.com/sergiowinkelstroter/ToDo-list-vue",
+    demo: "https://to-do-list-vue-umber.vercel.app",
   },
 ];
