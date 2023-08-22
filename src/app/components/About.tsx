@@ -23,17 +23,14 @@ export const About = () => {
           </div>
           <div className="mt-10 px-4 flex flex-col gap-6 items-center container">
             <p className="text-start text-sm md:text-base">
-              Desenvolvedor front-end especializado em{" "}
-              <span className="font-bold">React.js</span>. Estudante de Sistemas
-              para Internet. Habilidades em{" "}
-              <span className="font-bold">HTML</span>,{" "}
-              <span className="font-bold">CSS</span>,{" "}
-              <span className="font-bold">JavaScript</span>,
-              <span className="font-bold">TypeScript</span> e{" "}
-              <span className="font-bold">Next.js</span>. Apaixonado por criar
-              interfaces elegantes e interativas. Comprometido em oferecer
-              experiências de usuário excepcionais. Sempre atualizado com as
-              últimas tendências e em busca de desafios estimulantes.
+              Desenvolvedor front-end focado em <strong>React.js</strong>.
+              Estudante de Sistemas para Internet. Habilidades em{" "}
+              <strong>HTML</strong>, <strong>CSS</strong>,{" "}
+              <strong>JavaScript</strong>,<strong>TypeScript</strong> e{" "}
+              <strong>Next.js</strong>. Apaixonado por criar interfaces
+              elegantes e interativas. Comprometido em oferecer experiências de
+              usuário excepcionais. Sempre atualizado com as últimas tendências
+              e em busca de desafios estimulantes.
             </p>
             <a
               download
